@@ -8,8 +8,9 @@ using AspNetCorePnotify.Models;
 
 namespace AspNetCorePnotify.Data
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class ApplicationDbContext : DbContext
     {
+        public DbSet<Cliente> Clientes { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
