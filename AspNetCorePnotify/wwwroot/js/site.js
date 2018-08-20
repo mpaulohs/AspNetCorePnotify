@@ -1,6 +1,4 @@
-﻿// Write your JavaScript code.
-
-
+﻿
 $(function () {
 
     $.pnotify.defaults.styling = "bootstrap3";
